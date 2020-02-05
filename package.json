@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
+    "android": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug",
     "test": "jest",
     "lint": "eslint ."
   },
@@ -11,9 +12,11 @@
     "@ant-design/icons-react-native": "*",
     "@ant-design/react-native": "^3.1.10",
     "@react-native-community/async-storage": "^1.5.1",
+    "axios": "^0.19.2",
     "react": "16.8.6",
     "react-native": "0.60.3",
     "react-native-fs": "^2.13.3",
+    "react-native-navigation": "^4.6.2",
     "xlsx": "^0.14.4"
   },
   "devDependencies": {
